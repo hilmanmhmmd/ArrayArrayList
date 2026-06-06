@@ -1,0 +1,35 @@
+package bagian3.perpustakaan;
+
+public class MainPerpustakaan {
+    public static void main(String[] args) {
+
+        Perpustakaan perpus = new Perpustakaan();
+
+        // tambah buku (pakai tahun terbit)
+        perpus.tambahBuku(new Buku("Laskar Pelangi", "Andrea Hirata", 2005));
+        perpus.tambahBuku(new Buku("Bumi Manusia", "Pramoedya", 1980));
+        perpus.tambahBuku(new Buku("Negeri 5 Menara", "Ahmad Fuadi", 2009));
+
+        perpus.tampilkanKoleksi();
+
+        System.out.println();
+
+        perpus.pinjamBuku("Bumi Manusia");
+
+        System.out.println();
+
+        // ✅ uji kembalikan buku
+        perpus.kembalikanBuku("Bumi Manusia");
+
+        System.out.println();
+
+        perpus.tampilkanKoleksi();
+
+        System.out.println("Buku tersedia: " + perpus.jumlahTersedia());
+
+        System.out.println();
+
+        // ✅ uji cari penulis
+        perpus.cariPenulis("Andrea Hirata");
+    }
+}
