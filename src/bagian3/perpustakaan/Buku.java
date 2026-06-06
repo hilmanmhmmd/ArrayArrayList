@@ -4,21 +4,13 @@ public class Buku {
     private String judul;
     private String penulis;
     private boolean dipinjam;
-    private int tahunTerbit; // tambahan
+    private int tahunTerbit;
 
-    // constructor baru
+    // constructor
     public Buku(String judul, String penulis, int tahunTerbit) {
         this.judul = judul;
         this.penulis = penulis;
         this.tahunTerbit = tahunTerbit;
-        this.dipinjam = false;
-    }
-
-    // OPTIONAL (biar aman kalau dosen pakai yang lama)
-    public Buku(String judul, String penulis) {
-        this.judul = judul;
-        this.penulis = penulis;
-        this.tahunTerbit = 0;
         this.dipinjam = false;
     }
 

@@ -3,6 +3,7 @@ package bagian3.perpustakaan;
 import java.util.ArrayList;
 
 public class Perpustakaan {
+
     private ArrayList<Buku> koleksi = new ArrayList<>();
 
     public void tambahBuku(Buku buku) {
@@ -29,10 +30,10 @@ public class Perpustakaan {
                 return;
             }
         }
-        System.out.println("Buku " + judul + " tidak ditemukan.");
+        System.out.println("Buku tidak ditemukan.");
     }
 
-    // ✅ TAMBAHAN 1
+    //ketentuan 1
     public void kembalikanBuku(String judul) {
         for (Buku b : koleksi) {
             if (b.getJudul().equals(judul)) {
@@ -54,7 +55,7 @@ public class Perpustakaan {
         return jumlah;
     }
 
-    // ✅ TAMBAHAN 2
+    //ketentuan 3
     public void cariPenulis(String penulis) {
         System.out.println("Buku oleh " + penulis + ":");
         for (Buku b : koleksi) {

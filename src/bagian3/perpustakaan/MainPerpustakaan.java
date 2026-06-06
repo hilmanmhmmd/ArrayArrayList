@@ -5,7 +5,6 @@ public class MainPerpustakaan {
 
         Perpustakaan perpus = new Perpustakaan();
 
-        // tambah buku (pakai tahun terbit)
         perpus.tambahBuku(new Buku("Laskar Pelangi", "Andrea Hirata", 2005));
         perpus.tambahBuku(new Buku("Bumi Manusia", "Pramoedya", 1980));
         perpus.tambahBuku(new Buku("Negeri 5 Menara", "Ahmad Fuadi", 2009));
@@ -18,7 +17,7 @@ public class MainPerpustakaan {
 
         System.out.println();
 
-        // ✅ uji kembalikan buku
+        // uji kembalikan
         perpus.kembalikanBuku("Bumi Manusia");
 
         System.out.println();
@@ -29,7 +28,7 @@ public class MainPerpustakaan {
 
         System.out.println();
 
-        // ✅ uji cari penulis
+        // uji cari penulis
         perpus.cariPenulis("Andrea Hirata");
     }
 }
