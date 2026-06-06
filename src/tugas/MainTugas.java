@@ -12,7 +12,7 @@ public class MainTugas {
         kelas.tambahMahasiswa(new Mahasiswa("Dina", "004", 60));
         kelas.tambahMahasiswa(new Mahasiswa("Eko", "005", 50));
 
-        // array mata kuliah
+        //array mata kuliah
         String[] matkul = {"PBO", "Basis Data", "Algoritma"};
 
         System.out.println("== Mata Kuliah ==");
@@ -26,13 +26,13 @@ public class MainTugas {
 
         System.out.println();
 
-        // rata-rata & jumlah lulus
+        //rata-rata & jumlah lulus
         System.out.println("Rata-rata nilai: " + kelas.hitungRataRata());
         System.out.println("Jumlah lulus: " + kelas.jumlahLulus());
 
         System.out.println();
 
-        // tambah 1 mahasiswa baru
+        //tambah 1 mahasiswa baru
         kelas.tambahMahasiswa(new Mahasiswa("Fajar", "006", 90));
 
         System.out.println("Jumlah mahasiswa sekarang: " + kelas.jumlahMahasiswa());
